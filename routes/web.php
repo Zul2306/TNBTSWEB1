@@ -2,17 +2,32 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route untuk halaman login menggunakan LoginController dengan method index
-Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
-Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
-// Route untuk root URL yang mengembalikan view 'welcome'
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
+=======
+Route::get('/Admin', [\App\Http\Controllers\AdminController::class, 'read']);
+Route::post('/Admin', [\App\Http\Controllers\AdminController::class, 'store']);
+Route::get('/Admin/index', [\App\Http\Controllers\AdminController::class, 'create']);
+Route::get('/Admin/{id}/index', [\App\Http\Controllers\AdminController::class, 'edit']);
+Route::put('/Admin/update/{id}', [\App\Http\Controllers\AdminController::class, 'update'])->name('admin.update');
+Route::delete('/admin/{id}', [\App\Http\Controllers\AdminController::class, 'delete'])->name('admin.delete');
 
