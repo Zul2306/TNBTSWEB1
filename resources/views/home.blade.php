@@ -19,9 +19,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="{{asset('../assets/img/favicon.png')}}">
     <title>
-        Argon Dashboard 2 by Creative Tim
+        TNBTSWEB1
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -100,7 +100,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="../pages/sign-in.html">
+                    <a class="nav-link " href="{{ route('home') }}">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
                         </div>
@@ -118,17 +118,17 @@
             </ul>
         </div>
         <div class="sidenav-footer mx-3 ">
-            <div class="card card-plain shadow-none" id="sidenavCard">
+            {{-- <div class="card card-plain shadow-none" id="sidenavCard">
                 <img class="w-50 mx-auto" src="../assets/img/illustrations/icon-documentation.svg" alt="sidebar_illustration">
                 <div class="card-body text-center p-3 w-100 pt-0">
                     <div class="docs-info">
                         <h6 class="mb-0">Need help?</h6>
                         <p class="text-xs font-weight-bold mb-0">Please check our docs</p>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <a href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Documentation</a>
-            <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
+            {{-- <a class="btn btn-primary btn-sm mb-0 w-100" href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a> --}}
         </div>
     </aside>
     <main class="main-content position-relative border-radius-lg ">
@@ -151,11 +151,17 @@
                     </div>
                     <ul class="navbar-nav  justify-content-end">
                         <li class="nav-item d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
+                            <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link text-white font-weight-bold px-0">
                                 <i class="fa fa-user me-sm-1"></i>
-                                <span class="d-sm-inline d-none">Sign In</span>
+                                <span class="d-sm-inline d-none">Logout</span>
                             </a>
+                            
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                            
                         </li>
+                        
                         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                             <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
                                 <div class="sidenav-toggler-inner">
@@ -372,17 +378,25 @@
                     <div class="card card-carousel overflow-hidden h-100 p-0">
                         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                             <div class="carousel-inner border-radius-lg h-100">
-                                <div class="carousel-item h-100 active" style="background-image: url('../assets/img/carousel-1.jpg');
-      background-size: cover;">
+                                <div class="carousel-item h-100 active" style="background-size: cover;">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1704916154584!2d113.69951941484205!3d-8.1724259941181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695ac7cde2fdd%3A0x4027a76e353cf0f4!2sAlun-alun%20Jember!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy">
+                                    </iframe>
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
-                                            <i class="ni ni-camera-compact text-dark opacity-10"></i>
+                                            <i class="ni ni-map-big text-dark opacity-10"></i>
                                         </div>
-                                        <h5 class="text-white mb-1">Get started with Argon</h5>
-                                        <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
+                                        <h5 class="text-white mb-1">Alun-Alun Jember</h5>
+                                        <p>Nikmati keindahan dan suasana Alun-Alun Jember.</p>
                                     </div>
                                 </div>
-                                <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');
+                                
+                                {{-- <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');
       background-size: cover;">
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
@@ -403,7 +417,7 @@
                                         <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <button class="carousel-control-prev w-5 me-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
