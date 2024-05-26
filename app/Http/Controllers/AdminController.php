@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -121,4 +123,44 @@ class AdminController extends Controller
         // Redirect ke halaman yang sesuai atau kirimkan respons JSON jika API
         return redirect('/Admin')->with('success', 'Data admin berhasil dihapus');
     }
+    public function showLoginForm()
+    {
+        return view('auth.admin-login');
+    }
+
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::guard('admin')->attempt($credentials)) {
+            return redirect()->intended('/admin/dashboard'); // Redirect ke dashboard admin atau halaman lain
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
+    }
+    public function registeradmin(Request $request)
+{
+    // Validasi data registrasi
+    $this->validator($request->all())->validate();
+
+    // Buat dan simpan data admin baru
+    Admin::create([
+        'name' => $request->name,
+        'email' => $request->email,
+        'password' => Hash::make($request->password),
+        'alamat' => $request->alamat,
+        'telepon' => $request->telepon,
+    ]);
+
+    // Logika lain sesuai kebutuhan (misalnya, kirim email verifikasi)
+
+    // Redirect atau response setelah registrasi sukses
+    return redirect()->route('home')->with('success', 'Registrasi berhasil!');
+}
+public function showRegisForm()
+{
+    return view('auth.admin-register');
+}
 }

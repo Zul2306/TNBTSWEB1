@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('/Dashboard', [\App\Http\Controllers\DashboardController::class, 'index']);
@@ -31,8 +31,12 @@ Route::get('/Admin/index', [\App\Http\Controllers\AdminController::class, 'creat
 Route::get('/Admin/{id}/index', [\App\Http\Controllers\AdminController::class, 'edit'])->name('admin.edit');
 Route::put('/Admin/update/{id}', [\App\Http\Controllers\AdminController::class, 'update'])->name('admin.update');
 Route::delete('/admin/{id}', [\App\Http\Controllers\AdminController::class, 'delete'])->name('admin.delete');
+Route::get('admin/login', [\App\Http\Controllers\AdminController::class, 'showLoginForm'])->name('admin.login');
+Route::post('admin/login', [\App\Http\Controllers\AdminController::class, 'login']);
+// Route::post('/register', [\App\Http\Controllers\AdminController::class, 'registeradmin']);
+// Route::get('/register', [\App\Http\Controllers\AdminController::class, 'showRegisForm'])->name('admin.registeradmin');
 Route::post('/Auth/login', [\App\Http\Controllers\AdminController::class, 'read'])->name('admin.read');
-// Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Auth::routes();
 
