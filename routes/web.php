@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,16 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-
+Route::get('/Dashboard', [\App\Http\Controllers\DashboardController::class, 'index']);
 Route::get('/Admin', [\App\Http\Controllers\AdminController::class, 'read'])->name('admin.read');
 Route::post('/Admin', [\App\Http\Controllers\AdminController::class, 'store'])->name('admin.store');
 Route::get('/Admin/index', [\App\Http\Controllers\AdminController::class, 'create'])->name('admin.create');
 Route::get('/Admin/{id}/index', [\App\Http\Controllers\AdminController::class, 'edit'])->name('admin.edit');
 Route::put('/Admin/update/{id}', [\App\Http\Controllers\AdminController::class, 'update'])->name('admin.update');
 Route::delete('/admin/{id}', [\App\Http\Controllers\AdminController::class, 'delete'])->name('admin.delete');
+Route::post('/Auth/login', [\App\Http\Controllers\AdminController::class, 'read'])->name('admin.read');
+// Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
