@@ -39,5 +39,5 @@ Route::post('/Auth/login', [\App\Http\Controllers\AdminController::class, 'read'
 Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Auth::routes();
-
+Route::post('/logout', function () {auth()->logout();return redirect('/');})->name('logout');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
