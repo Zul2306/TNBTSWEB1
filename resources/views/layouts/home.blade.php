@@ -56,48 +56,8 @@
                         <span class="nav-link-text ms-1">Dashboard</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../pages/tables.html">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Tables</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../pages/billing.html">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Billing</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../pages/virtual-reality.html">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-app text-info text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Virtual Reality</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../pages/rtl.html">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">RTL</span>
-                    </a>
-                </li>
-                <li class="nav-item mt-3">
-                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../pages/profile.html">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Profile</span>
-                    </a>
+                
+                
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="{{ route('home') }}">
@@ -142,13 +102,7 @@
                     </ol>
                     <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
                 </nav>
-                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
-                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-                        <div class="input-group">
-                            <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" placeholder="Type here...">
-                        </div>
-                    </div>
+              
                     <ul class="navbar-nav  justify-content-end">
                         <li class="nav-item d-flex align-items-center">
                             <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link text-white font-weight-bold px-0">
@@ -171,15 +125,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item px-3 d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-white p-0">
-                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown pe-2 d-flex align-items-center">
-                            <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-bell cursor-pointer"></i>
-                            </a>
+                     
                             <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                                 <li class="mb-2">
                                     <a class="dropdown-item border-radius-md" href="javascript:;">
@@ -261,136 +207,111 @@
             <div class="row">
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Money</p>
-                                        <h5 class="font-weight-bolder">
-                                            $53,000
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-success text-sm font-weight-bolder">+55%</span>
-                                            since yesterday
-                                        </p>
-                                    </div>
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Temperature</p>
+                                    <h5 class="font-weight-bolder">
+                                        28°C
+                                    </h5>
+                                    <p class="mb-0">
+                                        <span class="text-danger text-sm font-weight-bolder">High: 32°C</span>
+                                        <br>
+                                        <span class="text-primary text-sm font-weight-bolder">Low: 24°C</span>
+                                    </p>
                                 </div>
-                                <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                                    <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                    <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Users</p>
-                                        <h5 class="font-weight-bolder">
-                                            2,300
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-success text-sm font-weight-bolder">+3%</span>
-                                            since last week
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                                        <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">New Clients</p>
-                                        <h5 class="font-weight-bolder">
-                                            +3,462
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-danger text-sm font-weight-bolder">-2%</span>
-                                            since last quarter
-                                        </p>
-                                    </div>
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Disaster</p>
+                                    <h5 class="font-weight-bolder">
+                                        siaga
+                                    </h5>
+                                    <p class="mb-0">
+                                        <span class="text-danger text-sm font-weight-bolder">Magnitude: 6.5</span>
+                                        <br>
+                                        <span class="text-primary text-sm font-weight-bolder">Location: Bromo, Indonesia</span>
+                                    </p>
                                 </div>
-                                <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                                        <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
+                                    <i class="ni ni-alert text-lg opacity-10" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                    <div class="card">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="numbers">
+                                    <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Weather</p>
+                                    <h5 class="font-weight-bolder">
+                                        cerah
+                                    </h5>
+                                    <p class="mb-0">
+                                        <span class="text-success text-sm font-weight-bolder">21°C</span>
+                                        <br>
+                                        <span class="text-primary text-sm font-weight-bolder">Bromo, Indonesia</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-end">
+                                <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                                    <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6">
                     <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Sales</p>
-                                        <h5 class="font-weight-bolder">
-                                            $103,430
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-success text-sm font-weight-bolder">+5%</span> than last month
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
-                                        <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
                     /div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-lg-7 mb-lg-0 mb-4">
-                        <div class="card z-index-2 h-100">
-                            <div class="card-header pb-0 pt-3 bg-transparent">
-                                <h6 class="text-capitalize">Sales overview</h6>
-                                <p class="text-sm mb-0">
-                                    <i class="fa fa-arrow-up text-success"></i>
-                                    <span class="font-weight-bold">4% more</span> in 2021
-                                </p>
-                            </div>
-                            <div class="card-body p-3">
-                                <div class="chart">
-                                    <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
+               
+                <div class="col-lg-5 mt-5">
+                    <div class="card card-carousel overflow-hidden h-100 p-0">
+                        <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-inner border-radius-lg h-100">
+                                <div class="carousel-item h-100 active" style="background-size: cover;">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                                        <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                                            <i class="ni ni-map-big text-dark opacity-10"></i>
+                                        </div>
+                                        <h5 class="text-white mb-1" style="font-size: 1.5rem;">Taman Nasional Bromo Tengger Semeru</h5>
+                                        <p style="font-size: 1.2rem;">Nikmati keindahan Taman Nasional Bromo Tengger Semeru.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="card card-carousel overflow-hidden h-100 p-0">
-                            <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
-                                <div class="carousel-inner border-radius-lg h-100">
-                                    <div class="carousel-item h-100 active" style="background-size: cover;">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1704916154584!2d113.69951941484205!3d-8.1724259941181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695ac7cde2fdd%3A0x4027a76e353cf0f4!2sAlun-alun%20Jember!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                                        </iframe>
-                                        <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                                            <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
-                                                <i class="ni ni-map-big text-dark opacity-10"></i>
-                                            </div>
-                                            <h5 class="text-white mb-1">Alun-Alun Jember</h5>
-                                            <p>Nikmati keindahan dan suasana Alun-Alun Jember.</p>
-                                        </div>
-                                    </div>
+                </div>
+
 
                                     {{-- <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');
       background-size: cover;">
@@ -426,214 +347,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-7 mb-lg-0 mb-4">
-                            <div class="card ">
-                                <div class="card-header pb-0 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="mb-2">Sales by Country</h6>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table align-items-center ">
-                                        <tbody>
-                                            <tr>
-                                                <td class="w-30">
-                                                    <div class="d-flex px-2 py-1 align-items-center">
-                                                        <div>
-                                                            <img src="../assets/img/icons/flags/US.png" alt="Country flag">
-                                                        </div>
-                                                        <div class="ms-4">
-                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                            <h6 class="text-sm mb-0">United States</h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                        <h6 class="text-sm mb-0">2500</h6>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                        <h6 class="text-sm mb-0">$230,900</h6>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle text-sm">
-                                                    <div class="col text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                                        <h6 class="text-sm mb-0">29.9%</h6>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="w-30">
-                                                    <div class="d-flex px-2 py-1 align-items-center">
-                                                        <div>
-                                                            <img src="../assets/img/icons/flags/DE.png" alt="Country flag">
-                                                        </div>
-                                                        <div class="ms-4">
-                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                            <h6 class="text-sm mb-0">Germany</h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                        <h6 class="text-sm mb-0">3.900</h6>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                        <h6 class="text-sm mb-0">$440,000</h6>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle text-sm">
-                                                    <div class="col text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                                        <h6 class="text-sm mb-0">40.22%</h6>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="w-30">
-                                                    <div class="d-flex px-2 py-1 align-items-center">
-                                                        <div>
-                                                            <img src="../assets/img/icons/flags/GB.png" alt="Country flag">
-                                                        </div>
-                                                        <div class="ms-4">
-                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                            <h6 class="text-sm mb-0">Great Britain</h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                        <h6 class="text-sm mb-0">1.400</h6>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                        <h6 class="text-sm mb-0">$190,700</h6>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle text-sm">
-                                                    <div class="col text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                                        <h6 class="text-sm mb-0">23.44%</h6>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="w-30">
-                                                    <div class="d-flex px-2 py-1 align-items-center">
-                                                        <div>
-                                                            <img src="../assets/img/icons/flags/BR.png" alt="Country flag">
-                                                        </div>
-                                                        <div class="ms-4">
-                                                            <p class="text-xs font-weight-bold mb-0">Country:</p>
-                                                            <h6 class="text-sm mb-0">Brasil</h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Sales:</p>
-                                                        <h6 class="text-sm mb-0">562</h6>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Value:</p>
-                                                        <h6 class="text-sm mb-0">$143,960</h6>
-                                                    </div>
-                                                </td>
-                                                <td class="align-middle text-sm">
-                                                    <div class="col text-center">
-                                                        <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                                                        <h6 class="text-sm mb-0">32.14%</h6>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="card">
-                                <div class="card-header pb-0 p-3">
-                                    <h6 class="mb-0">Categories</h6>
-                                </div>
-                                <div class="card-body p-3">
-                                    <ul class="list-group">
-                                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                            <div class="d-flex align-items-center">
-                                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                                    <i class="ni ni-mobile-button text-white opacity-10"></i>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <h6 class="mb-1 text-dark text-sm">Devices</h6>
-                                                    <span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                            <div class="d-flex align-items-center">
-                                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                                    <i class="ni ni-tag text-white opacity-10"></i>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <h6 class="mb-1 text-dark text-sm">Tickets</h6>
-                                                    <span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                            <div class="d-flex align-items-center">
-                                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                                    <i class="ni ni-box-2 text-white opacity-10"></i>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <h6 class="mb-1 text-dark text-sm">Error logs</h6>
-                                                    <span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
-                                            <div class="d-flex align-items-center">
-                                                <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                                    <i class="ni ni-satisfied text-white opacity-10"></i>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <h6 class="mb-1 text-dark text-sm">Happy users</h6>
-                                                    <span class="text-xs font-weight-bold">+ 430</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
+                       
                     <footer class="footer pt-3  ">
                         <div class="container-fluid">
                             <div class="row align-items-center justify-content-lg-between">
