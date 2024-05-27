@@ -256,7 +256,7 @@
                                             28°C
                                         </h5>
                                         <p class="mb-0">
-                                            <span class="text-danger text-sm font-weight-bolder">High: 27°C</span>
+                                            <span class="text-danger text-sm font-weight-bolder"></span>{{ isset($temperature) ? $temperature . '°C' : 'N/A' }}
                                             <br>
                                             <span class="text-primary text-sm font-weight-bolder">Low: 7°C</span>
                                         </p>

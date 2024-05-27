@@ -245,7 +245,7 @@
                                         siaga
                                     </h5>
                                     <p class="mb-0">
-                                        <span class="text-danger text-sm font-weight-bolder">Magnitude: 4.6</span>
+                                        <span class="text-danger text-sm font-weight-bolder">Magnitude: 4,</span>
                                         <br>
                                         <span class="text-primary text-sm font-weight-bolder">Location: Bromo, Indonesia</span>
                                     </p>
