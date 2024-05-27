@@ -33,11 +33,15 @@ Route::put('/Admin/update/{id}', [\App\Http\Controllers\AdminController::class, 
 Route::delete('/admin/{id}', [\App\Http\Controllers\AdminController::class, 'delete'])->name('admin.delete');
 Route::get('admin/login', [\App\Http\Controllers\AdminController::class, 'showLoginForm'])->name('admin.login');
 Route::post('admin/login', [\App\Http\Controllers\AdminController::class, 'login']);
-// Route::post('/register', [\App\Http\Controllers\AdminController::class, 'registeradmin']);
-// Route::get('/register', [\App\Http\Controllers\AdminController::class, 'showRegisForm'])->name('admin.registeradmin');
+Route::get('/pengguna', [\App\Http\Controllers\PenggunaController::class, 'read'])->name('pengguna.read');
+Route::delete('/pengguna/{id}', [\App\Http\Controllers\PenggunaController::class, 'destroy'])->name('pengguna.destroy');
+// Route::get('/pengguna', 'PenggunaController@index')->name('pengguna.index');
 Route::post('/Auth/login', [\App\Http\Controllers\AdminController::class, 'read'])->name('admin.read');
 Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Auth::routes();
-Route::post('/logout', function () {auth()->logout();return redirect('/');})->name('logout');
+Route::post('/logout', function () {
+    auth()->logout();
+    return redirect('/');
+})->name('logout');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
