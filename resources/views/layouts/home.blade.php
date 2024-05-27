@@ -41,8 +41,10 @@
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
-                <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold">Argon Dashboard 2</span>
+                <!-- <img src="../assets/img/tnbts.jpeg
+                <img src="{{ asset('img/tnbts.jpeg') }}" class="navbar-brand-img img-large" alt="main_logo"> -->
+<!-- 
+                <span class="ms-1 font-weight-bold">Argon Dashboard 2</span> -->
             </a>
         </div>
         <hr class="horizontal dark mt-0">
@@ -216,9 +218,9 @@
                                         28°C
                                     </h5>
                                     <p class="mb-0">
-                                        <span class="text-danger text-sm font-weight-bolder">High: 32°C</span>
+                                        <span class="text-danger text-sm font-weight-bolder">High: 27°C</span>
                                         <br>
-                                        <span class="text-primary text-sm font-weight-bolder">Low: 24°C</span>
+                                        <span class="text-primary text-sm font-weight-bolder">Low: 7°C</span>
                                     </p>
                                 </div>
                             </div>
@@ -243,7 +245,7 @@
                                         siaga
                                     </h5>
                                     <p class="mb-0">
-                                        <span class="text-danger text-sm font-weight-bolder">Magnitude: 6.5</span>
+                                        <span class="text-danger text-sm font-weight-bolder">Magnitude: 4.6</span>
                                         <br>
                                         <span class="text-primary text-sm font-weight-bolder">Location: Bromo, Indonesia</span>
                                     </p>
@@ -293,12 +295,12 @@
                     /div>
                 </div>
                
-                <div class="col-lg-5 mt-5">
+                <div class="col-lg-5 mt-5 mb-5">
                     <div class="card card-carousel overflow-hidden h-100 p-0">
                         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                             <div class="carousel-inner border-radius-lg h-100">
                                 <div class="carousel-item h-100 active" style="background-size: cover;">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                                         <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                                             <i class="ni ni-map-big text-dark opacity-10"></i>
