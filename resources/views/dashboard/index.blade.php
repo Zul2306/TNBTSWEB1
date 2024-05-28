@@ -263,9 +263,10 @@
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                                        <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                                <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                                    <i class="fas fa-thermometer-half text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+
                                 </div>
                             </div>
                         </div>
@@ -290,9 +291,10 @@
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                                        <i class="ni ni-alert text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
+                                    <i class="fas fa-exclamation-triangle text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+
                                 </div>
                             </div>
                         </div>
@@ -316,9 +318,10 @@
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                                        <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                                <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                                    <i class="fas fa-cloud-sun text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+
                                 </div>
                             </div>
                         </div>
@@ -332,24 +335,25 @@
                     /div>
                 </div>
 
-                <div class="col-lg-5 mt-5 mb-5">
-                    <div class="card card-carousel overflow-hidden h-100 p-0">
-                        <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
-                            <div class="carousel-inner border-radius-lg h-100">
-                                <div class="carousel-item h-100 active" style="background-size: cover;">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                                        <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
-                                            <i class="ni ni-map-big text-dark opacity-10"></i>
-                                        </div>
-                                        <h5 class="text-white mb-1" style="font-size: 1.5rem;">Taman Nasional Bromo Tengger Semeru</h5>
-                                        <p style="font-size: 1.2rem;">Nikmati keindahan Taman Nasional Bromo Tengger Semeru.</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-12 mt-5 mb-5">
+    <div class="card card-carousel overflow-hidden h-100 p-0">
+        <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-inner border-radius-lg h-100">
+                <div class="carousel-item h-100 active" style="background-size: cover;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                        <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                            <i class="ni ni-map-big text-dark opacity-10"></i>
                         </div>
+                        <h5 class="text-white mb-1" style="font-size: 1.5rem;">Taman Nasional Bromo Tengger Semeru</h5>
+                        <p style="font-size: 1.2rem;">Nikmati keindahan Taman Nasional Bromo Tengger Semeru.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
                 {{-- <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');
