@@ -253,12 +253,12 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Temperature</p>
                                         <h5 class="font-weight-bolder">
-                                            {{ $weather['current']['temp_c'] }}
+                                            {{ $weather['current']['temp_c'] }} °C
                                         </h5>
                                         <p class="mb-0">
-                                            <span class="text-danger text-sm font-weight-bolder"></span>{{ $weather['forecast']['forecastday'][0]['day']['maxtemp_c'] }}°C
+                                            <span class="text-danger text-sm font-weight-bolder">Suhu Max {{ $weather['forecast']['forecastday'][0]['day']['maxtemp_c'] }}°C</span>
                                             <br>
-                                            <span class="text-primary text-sm font-weight-bolder">Low: 7°C</span>
+                                            <span class="text-primary text-sm font-weight-bolder">Suhu min {{ $weather['forecast']['forecastday'][0]['day']['mintemp_c'] }}°C</span>
                                         </p>
                                     </div>
                                 </div>
@@ -285,7 +285,7 @@
                                         <p class="mb-0">
                                             <span class="text-danger text-sm font-weight-bolder">Magnitude: 4.6</span>
                                             <br>
-                                            <span class="text-primary text-sm font-weight-bolder">Location: Bromo, Indonesia</span>
+                                            <span class="text-primary text-sm font-weight-bolder">Location: <br>Bromo, Indonesia</span>
                                         </p>
                                     </div>
                                 </div>
@@ -306,12 +306,11 @@
                                 <div class="col-8">
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Weather</p>
-                                        <h5 class="font-weight-bolder">
-                                            cerah
+                                        <h5 class="font-weight-bolder">{{ $weather['current']['condition']['text'] }}
                                         </h5>
                                         <p class="mb-0">
                                             <span class="text-success text-sm font-weight-bolder">21°C</span>
-                                            <br>
+                                            <br> 
                                             <span class="text-primary text-sm font-weight-bolder">Bromo, Indonesia</span>
                                         </p>
                                     </div>
