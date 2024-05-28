@@ -253,10 +253,10 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Temperature</p>
                                         <h5 class="font-weight-bolder">
-                                            28°C
+                                            {{ $weather['current']['temp_c'] }}
                                         </h5>
                                         <p class="mb-0">
-                                            <span class="text-danger text-sm font-weight-bolder"></span>{{ isset($temperature) ? $temperature . '°C' : 'N/A' }}
+                                            <span class="text-danger text-sm font-weight-bolder"></span>{{ $weather['forecast']['forecastday'][0]['day']['maxtemp_c'] }}°C
                                             <br>
                                             <span class="text-primary text-sm font-weight-bolder">Low: 7°C</span>
                                         </p>
