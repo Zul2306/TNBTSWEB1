@@ -19,9 +19,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+<<<<<<< HEAD
     <link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
     <title>
         BROTERU
+=======
+    <link rel="icon" type="image/png" href="{{asset('../assets/img/favicon.png')}}">
+    <title>
+        TNBTSWEB1
+>>>>>>> 03222e788866783e7c90586046813e770e978fb7
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -49,13 +55,14 @@
         <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/dashboard.html">
+                    <a class="nav-link {{ request()->is('Dashboard') ? 'active' : ''}}" href="/Dashboard">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
                         </div>
                         <span class="nav-link-text ms-1">Dashboard</span>
                     </a>
                 </li>
+<<<<<<< HEAD
 
 
                 </li>
@@ -67,11 +74,14 @@
                         <span class="nav-link-text ms-1">Sign In</span>
                     </a>
                 </li>
+=======
+>>>>>>> 03222e788866783e7c90586046813e770e978fb7
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('Admin') ? 'active' : ''}} " href="/Admin">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
                         </div>
+<<<<<<< HEAD
                         <span class="nav-link-text ms-1">Tabel Admin</span>
                     </a>
                 </li>
@@ -83,6 +93,11 @@
                         <span class="nav-link-text ms-1">Tabel user</span>
                     </a>
                 </li>
+=======
+                        <span class="nav-link-text ms-1">Admin</span>
+                    </a>
+
+>>>>>>> 03222e788866783e7c90586046813e770e978fb7
             </ul>
         </div>
         <!-- <div class="sidenav-footer mx-3 ">

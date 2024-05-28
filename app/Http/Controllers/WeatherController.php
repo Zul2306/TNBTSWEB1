@@ -3,36 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
-
-class DashboardController extends Controller
-{
-    public function index() {
-        return view ('Dashboard.index');
-=======
 use Illuminate\Support\Facades\Http;
 
-class DashboardController extends Controller
+class WeatherController extends Controller
 {
-    public function index()
+    public function getWeather()
     {
-        $apiKey = 'aa79d890f2e5419fbb885438242805';
-        $city = 'London';
+        $apiKey = 'aa79d890f2e5419fbb885438242805'; // Ganti dengan API key Anda dari WeatherAPI
+        $city = 'Batu'; // Nama kota yang ingin Anda ambil datanya
+
         $response = Http::get("http://api.weatherapi.com/v1/forecast.json?key={$apiKey}&q={$city}&days=1");
 
         if ($response->successful()) {
             $weatherData = $response->json();
 
-            if (!isset($weatherData['forecast'])) {
-                return response()->json(['error' => 'Unexpected API response structure', 'response' => $weatherData], 500);
-            }
-
             // Terjemahkan teks kondisi cuaca
             $weatherData['current']['condition']['text'] = $this->terjemahkanKondisiCuaca($weatherData['current']['condition']['text']);
 
-            return view('Dashboard.index', ['weather' => $weatherData]);
+            // Terjemahkan teks lainnya jika diperlukan
+
+            return view('weather', ['weather' => $weatherData]);
         } else {
-            return response()->json(['error' => 'Unable to retrieve weather data'], 500);
+            // Tangani error di sini
+            return response()->json(['error' => 'Tidak dapat mengambil data cuaca'], 500);
         }
     }
 
@@ -88,6 +81,5 @@ class DashboardController extends Controller
 
         // Kembalikan teks yang diterjemahkan jika tersedia, jika tidak kembalikan teks asli
         return $terjemahan[$kondisi] ?? $kondisi;
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
     }
 }
