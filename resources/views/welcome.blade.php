@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>TNBTS-Taman Nasional Bromo Tengger Semeru</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{asset('img/logo.png')}}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -52,7 +52,7 @@
                 height: 100vh;
             }
         </style>
-         <style>.center-container { display: flex; justify-content: center; align-items: center; height: auto; } .center-container img { max-width: 50%; height: auto; }</style>
+        <style>.center-container { display: flex; justify-content: center; align-items: center; height: auto; } .center-container img { max-width: 50%; height: auto; }</style>
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
