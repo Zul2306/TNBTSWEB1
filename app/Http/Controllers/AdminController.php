@@ -157,7 +157,7 @@ class AdminController extends Controller
     // Logika lain sesuai kebutuhan (misalnya, kirim email verifikasi)
 
     // Redirect atau response setelah registrasi sukses
-    return redirect()->route('home')->with('success', 'Registrasi berhasil!');
+    return redirect()->route('login')->with('success', 'Registrasi berhasil!');
 }
 public function showRegisForm()
 {

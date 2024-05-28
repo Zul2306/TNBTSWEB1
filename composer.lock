@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "a5e587af66df05d6a57013c70a6458f4",
-=======
-    "content-hash": "4fb1752219f90fb0346b1def28da7c20",
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
     "packages": [
         {
             "name": "brick/math",
@@ -3337,7 +3333,6 @@
         },
         {
             "name": "symfony/css-selector",
-<<<<<<< HEAD
             "version": "v7.0.7",
             "source": {
                 "type": "git",
@@ -3352,23 +3347,6 @@
             },
             "require": {
                 "php": ">=8.2"
-=======
-            "version": "v5.4.39",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "0934c9f1d433776f25c629bdc93f3e157d139e08"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/0934c9f1d433776f25c629bdc93f3e157d139e08",
-                "reference": "0934c9f1d433776f25c629bdc93f3e157d139e08",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.16"
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
             },
             "type": "library",
             "autoload": {
