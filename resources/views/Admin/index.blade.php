@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.home')
 
 @section('content')
 <div class="row">
@@ -6,7 +6,7 @@
         <div class="card mb-4">
             <div class="card-header pb-0">
                 <h6>Tabel Admin</h6>
-                <a href="/Admin/create" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</a>
+                <a href="{{ route('admin.create') }}" class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</a>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
                 <div class="table-responsive p-0">
@@ -15,25 +15,19 @@
                             <tr>
                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama</th>
                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Username</th>
-                                <!-- <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Password
-                                </th> -->
-                                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat
-                                </th>
-                                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                    Telepon</th>
-                                <th class="text-secondary opacity-7">action</th>
+                                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat</th>
+                                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Telepon</th>
+                                <th class="text-secondary opacity-7">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($admins as $admin)
-
                             <tr>
-                                <td>{{ $admin->name}} </td>
-                                <td>{{$admin->email}}</td>
-                                <td>{{$admin->alamat}}</td>
-                                <td>{{$admin->telepon}}</td>
+                                <td>{{ $admin->name }}</td>
+                                <td>{{ $admin->email }}</td>
+                                <td>{{ $admin->alamat }}</td>
+                                <td>{{ $admin->telepon }}</td>
                                 <td>
-
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -49,7 +43,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- tombol hapus -->
+                                    <!-- Delete Confirmation Modal -->
                                     <form action="{{ route('admin.delete', $admin->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
@@ -71,54 +65,42 @@
                                             </div>
                                         </div>
                                     </form>
-
-
-
-                                    <!-- <a href="#" class="btn btn-danger">Delete</a> -->
                                 </td>
                             </tr>
                             @endforeach
-
-
                         </tbody>
                     </table>
 
-                    <!-- form tambah -->
-                    <form action="/Admin" method="POST">
+                    <!-- Add Admin Modal -->
+                    <form action="{{ route('admin.store') }}" method="POST">
                         @csrf
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Admin</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Nama</label>
-                                            <input name="name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text">Jangan lupa nama juga diisi</div> -->
+                                            <label for="name" class="form-label">Nama</label>
+                                            <input name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <label for="email" class="form-label">Email</label>
                                             <input name="email" type="text" class="form-control" id="email" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text">Jangan lupa nama juga diisi</div> -->
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Password</label>
-                                            <input name="password" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text">Jangan lupa nama juga diisi</div> -->
+                                            <label for="password" class="form-label">Password</label>
+                                            <input name="password" type="password" class="form-control" id="password">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Alamat</label>
-                                            <input name="alamat" type="text" class="form-control" id="Alamat" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text">Jangan lupa nama juga diisi.</div> -->
+                                            <label for="alamat" class="form-label">Alamat</label>
+                                            <input name="alamat" type="text" class="form-control" id="alamat">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Telepon</label>
-                                            <input name="telepon" type="text" class="form-control" id="telepon" aria-describedby="emailHelp">
-                                            <!-- <div id="emailHelp" class="form-text">Jangan lupa nama juga diisi</div> -->
+                                            <label for="telepon" class="form-label">Telepon</label>
+                                            <input name="telepon" type="text" class="form-control" id="telepon">
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -129,12 +111,11 @@
                             </div>
                         </div>
                     </form>
-                    <!-- akhir form tambah -->
-                    <!-- form edit -->
-                    <form action="{{ route('admin.update', $admin->id) }}" method="POST">
+
+                    <!-- Edit Admin Modal -->
+                    <form id="editForm" method="POST">
                         @csrf
                         @method('PUT')
-
                         <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -173,51 +154,6 @@
                         </div>
                     </form>
 
-
-                    <!-- <form action="{{ route('admin.update', $admin->id) }}" method="POST">
-
-                        @method('put')
-                        @csrf
-                        <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Admin</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label">Nama</label>
-                                            <input name="name" type="text" class="form-control" id="name" value="{{ $admin->name }}">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label">Email</label>
-                                            <input name="email" type="text" class="form-control" id="email" value="{{ $admin->email }}">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input name="password" type="password" class="form-control" id="password" value="{{ $admin->password }}">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="alamat" class="form-label">Alamat</label>
-                                            <input name="alamat" type="text" class="form-control" id="alamat" value="{{ $admin->alamat }}">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="telepon" class="form-label">Telepon</label>
-                                            <input name="telepon" type="text" class="form-control" id="telepon" value="{{ $admin->telepon }}">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form> -->
-
-                    <!-- akhir form edit -->
-
                 </div>
             </div>
         </div>
@@ -225,6 +161,7 @@
 </div>
 @endsection
 
+@section('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var editButtons = document.querySelectorAll('.btn-edit-admin');
@@ -244,15 +181,10 @@
                 modal.querySelector('#alamat').value = adminAlamat;
                 modal.querySelector('#telepon').value = adminTelepon;
 
-                modal.querySelector('form').action = `/admin/update/${adminId}`;
+                modal.querySelector('form').action = `/admin/${adminId}`;
             });
         });
-    });
-</script>
-<!-- js tombol hapus -->
-@section('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
+
         var deleteButtons = document.querySelectorAll('.btn-delete-admin');
 
         deleteButtons.forEach(function(button) {
