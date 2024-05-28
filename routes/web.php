@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WeatherController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -39,7 +40,7 @@ Route::delete('/pengguna/{id}', [\App\Http\Controllers\PenggunaController::class
 Route::post('/Auth/login', [\App\Http\Controllers\AdminController::class, 'read'])->name('admin.read');
 Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('dashboard')->middleware('auth');
 // routes/web.php
-Route::get('/weather', [App\Http\Controllers\WeatherController::class, 'getWeather']);
+Route::get('/weather', [WeatherController::class, 'getWeather']);
 
 
 Auth::routes();
