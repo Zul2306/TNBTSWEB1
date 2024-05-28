@@ -10,7 +10,7 @@ class WeatherController extends Controller
     public function getWeather()
     {
         $apiKey = 'aa79d890f2e5419fbb885438242805'; // Ganti dengan API key Anda dari WeatherAPI
-        $city = 'Probolinggo'; // Nama kota yang ingin Anda ambil datanya
+        $city = 'Batu'; // Nama kota yang ingin Anda ambil datanya
         $response = Http::get("http://api.weatherapi.com/v1/forecast.json?key={$apiKey}&q={$city}&days=1");
 
         if ($response->successful()) {
