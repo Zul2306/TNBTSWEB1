@@ -291,9 +291,10 @@
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                                        <i class="ni ni-alert text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
+                                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
+                                    <i class="fas fa-exclamation-triangle text-lg opacity-10" aria-hidden="true"></i>
+                                </div>
+
                                 </div>
                             </div>
                         </div>
