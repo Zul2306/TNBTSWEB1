@@ -85,17 +85,6 @@
                         <span class="nav-link-text ms-1">Tabel user</span>
                     </a>
                 </li>
-<<<<<<< HEAD
-=======
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->is('Admin') ? 'active' : ''}} " href="/Admin">
-                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-                        </div>
-                        
-                    </a>
-                </li>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
             </ul>
         </div>
         <div class="sidenav-footer mx-3 ">
@@ -264,35 +253,19 @@
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Temperature</p>
                                         <h5 class="font-weight-bolder">
-<<<<<<< HEAD
                                             28°C
                                         </h5>
                                         <p class="mb-0">
                                             <span class="text-danger text-sm font-weight-bolder">High: 27°C</span>
                                             <br>
                                             <span class="text-primary text-sm font-weight-bolder">Low: 7°C</span>
-=======
-                                            {{ $weather['current']['temp_c'] }} °C
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-danger text-sm font-weight-bolder">Suhu Max {{ $weather['forecast']['forecastday'][0]['day']['maxtemp_c'] }}°C</span>
-                                            <br>
-                                            <span class="text-primary text-sm font-weight-bolder">Suhu min {{ $weather['forecast']['forecastday'][0]['day']['mintemp_c'] }}°C</span>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-<<<<<<< HEAD
                                     <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
                                         <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
-=======
-                                <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                                    <i class="fas fa-thermometer-half text-lg opacity-10" aria-hidden="true"></i>
-                                </div>
-
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                 </div>
                             </div>
                         </div>
@@ -312,25 +285,14 @@
                                         <p class="mb-0">
                                             <span class="text-danger text-sm font-weight-bolder">Magnitude: 4.6</span>
                                             <br>
-<<<<<<< HEAD
                                             <span class="text-primary text-sm font-weight-bolder">Location: Bromo, Indonesia</span>
-=======
-                                            <span class="text-primary text-sm font-weight-bolder">Location: <br>Bromo, Indonesia</span>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-<<<<<<< HEAD
                                     <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
                                         <i class="ni ni-alert text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
-=======
-                                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                                    <i class="fas fa-exclamation-triangle text-lg opacity-10" aria-hidden="true"></i>
-                                </div>
-
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                 </div>
                             </div>
                         </div>
@@ -344,35 +306,20 @@
                                 <div class="col-8">
                                     <div class="numbers">
                                         <p class="text-sm mb-0 text-uppercase font-weight-bold">Today's Weather</p>
-<<<<<<< HEAD
                                         <h5 class="font-weight-bolder">
                                             cerah
                                         </h5>
                                         <p class="mb-0">
                                             <span class="text-success text-sm font-weight-bolder">21°C</span>
                                             <br>
-=======
-                                        <h5 class="font-weight-bolder">{{ $weather['current']['condition']['text'] }}
-                                        </h5>
-                                        <p class="mb-0">
-                                            <span class="text-success text-sm font-weight-bolder">21°C</span>
-                                            <br> 
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                             <span class="text-primary text-sm font-weight-bolder">Bromo, Indonesia</span>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
-<<<<<<< HEAD
                                     <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
                                         <i class="ni ni-sun text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
-=======
-                                <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                                    <i class="fas fa-cloud-sun text-lg opacity-10" aria-hidden="true"></i>
-                                </div>
-
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                                 </div>
                             </div>
                         </div>
@@ -386,7 +333,6 @@
                     /div>
                 </div>
 
-<<<<<<< HEAD
                 <div class="col-lg-5 mt-5 mb-5">
                     <div class="card card-carousel overflow-hidden h-100 p-0">
                         <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
@@ -405,27 +351,6 @@
                         </div>
                     </div>
                 </div>
-=======
-                <div class="col-12 mt-5 mb-5">
-    <div class="card card-carousel overflow-hidden h-100 p-0">
-        <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
-            <div class="carousel-inner border-radius-lg h-100">
-                <div class="carousel-item h-100 active" style="background-size: cover;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.494295919071!2d112.9567424148448!3d-7.943636794268811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7887ac2d6546f5%3A0xd73f8a15c9189fb4!2sBromo-Tengger-Semeru%20National%20Park!5e0!3m2!1sen!2sid!4v1620325084201!5m2!1sen!2sid" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                        <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
-                            <i class="ni ni-map-big text-dark opacity-10"></i>
-                        </div>
-                        <h5 class="text-white mb-1" style="font-size: 1.5rem;">Taman Nasional Bromo Tengger Semeru</h5>
-                        <p style="font-size: 1.2rem;">Nikmati keindahan Taman Nasional Bromo Tengger Semeru.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
 
 
                 {{-- <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg');

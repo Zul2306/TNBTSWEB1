@@ -3,13 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
-
-class DashboardController extends Controller
-{
-    public function index() {
-        return view ('Dashboard.index');
-=======
 use Illuminate\Support\Facades\Http;
 
 class DashboardController extends Controller
@@ -88,6 +81,5 @@ class DashboardController extends Controller
 
         // Kembalikan teks yang diterjemahkan jika tersedia, jika tidak kembalikan teks asli
         return $terjemahan[$kondisi] ?? $kondisi;
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
     }
 }

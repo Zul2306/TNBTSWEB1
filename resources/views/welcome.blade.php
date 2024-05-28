@@ -6,11 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>TNBTS-Taman Nasional Bromo Tengger Semeru</title>
-<<<<<<< HEAD
         <link rel="icon" type="image/x-icon" href="{{asset('img/logo.png')}}" />
-=======
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -56,11 +52,7 @@
                 height: 100vh;
             }
         </style>
-<<<<<<< HEAD
         <style>.center-container { display: flex; justify-content: center; align-items: center; height: auto; } .center-container img { max-width: 50%; height: auto; }</style>
-=======
-         <style>.center-container { display: flex; justify-content: center; align-items: center; height: auto; } .center-container img { max-width: 50%; height: auto; }</style>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
@@ -80,7 +72,6 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ asset('img/bromo.jpeg') }}" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-<<<<<<< HEAD
                             <h4>Shoreline</h4>
                             <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
                         </div>
@@ -142,14 +133,6 @@
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
-=======
-                            <h4>TNBTS</h4>
-                            <p class="text-black-50 mb-0"> destinasi wisata daerah taman nasional bromo tengger semeru</p>
-                        </div>
-                    </div>
-                </div>
-           
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
                                     <div class="fw-bolder">Form submission successful!</div>
@@ -178,11 +161,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-<<<<<<< HEAD
                                 <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-=======
-                                <div class="small text-black-50">leces, probolinggo</div>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                             </div>
                         </div>
                     </div>
@@ -192,11 +171,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4 mx-auto" />
-<<<<<<< HEAD
                                 <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
-=======
-                                <div class="small text-black-50"><a href="#!">tnbts@gmail.com</a></div>
->>>>>>> 03222e788866783e7c90586046813e770e978fb7
                             </div>
                         </div>
                     </div>
