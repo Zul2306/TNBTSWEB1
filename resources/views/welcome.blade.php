@@ -106,7 +106,7 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">leces, probolinggo</div>
+                                <div class="small text-black-50">Ranupani, Lumajang, Jawa Timur</div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">(0341) 491828</div>
                             </div>
                         </div>
                     </div>
