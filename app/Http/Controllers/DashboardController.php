@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function index() {
         $apiKey = 'aa79d890f2e5419fbb885438242805';
-        $city = 'Probolinggo';
+        $city = 'Batu';
         $response = Http::get("http://api.weatherapi.com/v1/forecast.json?key={$apiKey}&q={$city}&days=1");
 
         if ($response->successful()) {
