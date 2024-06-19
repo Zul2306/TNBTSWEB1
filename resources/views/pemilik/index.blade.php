@@ -27,7 +27,7 @@
                                 <td>{{ $admin->alamat }}</td>
                                 <td>{{ $admin->telepon }}</td>
                                 <td>
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="col-sm-12">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <button type="button" class="btn btn-primary btn-edit-admin" data-id="{{ $admin->id }}" data-name="{{ $admin->name }}" data-email="{{ $admin->email }}" data-alamat="{{ $admin->alamat }}" data-telepon="{{ $admin->telepon }}" data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
@@ -40,10 +40,10 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
 
                                     <!-- Delete Confirmation Modal -->
-                                    <!-- <form action="{{ route('admin.delete', $admin->id) }}" method="POST">
+                                    <form action="{{ route('admin.delete', $admin->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -63,7 +63,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form> -->
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach
@@ -112,7 +112,7 @@
                     </form>
 
                     <!-- Edit Admin Modal -->
-                    <!-- <form id="editForm" method="POST">
+                    <form id="editForm" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form> -->
+                    </form>
 
                 </div>
             </div>

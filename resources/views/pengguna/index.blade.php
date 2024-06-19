@@ -5,7 +5,7 @@
     <div class="col-12">
         <div class="card mb-4">
             <div class="card-header pb-0">
-                <h6>Authors table</h6>
+                <h6>Tabel Pengguna</h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
                 <div class="table-responsive p-0">
@@ -16,7 +16,7 @@
                                 <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama</th>
                                 <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kata Sandi</th>
                                 <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
-                                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">status</th>
+                                <!-- <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">status</th> -->
                                 <th class="text-secondary opacity-7">Aksi</th>
                             </tr>
                         </thead>
@@ -25,7 +25,6 @@
                             <tr>
                                 <td>{{ $penggunas->id }}</td>
                                 <td>{{ $penggunas->nama_pengguna }}</td>
-                                <td>{{ $penggunas->kata_sandi }}</td>
                                 <td>{{ $penggunas->surel }}</td>
                                 <td>{{ $penggunas->peran }}</td>
                                 <td>

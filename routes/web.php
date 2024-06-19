@@ -3,6 +3,7 @@
 use App\Http\Controllers\WeatherController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\LaporanBencanaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,7 +43,11 @@ Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->nam
 // routes/web.php
 Route::get('/weather', [WeatherController::class, 'getWeather']);
 
-
+// Menampilkan daftar laporan bencana
+Route::get('/laporan-bencana', [LaporanBencanaController::class, 'index'])->name('laporan-bencana.index');
+Route::get('/laporan-bencana/{id}/edit', [LaporanBencanaController::class, 'edit'])->name('laporan_bencana.edit');
+Route::put('/laporan-bencana/{id}', [LaporanBencanaController::class, 'update'])->name('laporan_bencana.update');
+Route::delete('/laporan-bencana/{id}', [LaporanBencanaController::class, 'destroy'])->name('laporan_bencana.destroy');
 Auth::routes();
 Route::post('/logout', function () {
     auth()->logout();
